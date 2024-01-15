@@ -2,14 +2,6 @@ body {
     height: 100vh;
 }
 
-header {
-    text-align: right;
-}
-
-header button{
-    width: auto;
-}
-
 ol {
     list-style-type: none;
     padding: 0;
@@ -32,6 +24,16 @@ ol li.expense {
 
 ol li.income{
     border-left: 10px solid green;
+}
+
+ol li:hover button.danger {
+    display: block;
+}
+
+button.danger {
+    width: auto;
+    float: right;
+    display: none;
 }
 
 p{
